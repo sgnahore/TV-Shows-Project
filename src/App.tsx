@@ -1,5 +1,6 @@
 import { IEpisode } from "./IEpisodeTypes";
 import episodes from "./episodes.json";
+import "./styles.css"
 //import { IEpisode } from "./IEpisodeTypes";
 
 // console.log(`Imported ${episodes.length} episode(s)`);
@@ -7,12 +8,13 @@ import episodes from "./episodes.json";
 
 
 function App(): JSX.Element {
- 
+  
+  const allEpisodes = episodes.map((episode:IEpisode) => (<EpisodeCard key={episode.id} episode={episode}/>))
+
+
   return (
     <>
-      <EpisodeCard episode={episodes[0]} />
-      <EpisodeCard episode={episodes[1]} />
-
+    {allEpisodes}
     </>
   );
 }
@@ -23,10 +25,13 @@ interface EpisodeCardProps {
 
 function EpisodeCard(props: EpisodeCardProps): JSX.Element {
   return (
-  <>
-  <div>
+    <>
+  <div className="episodeFrame">
     <p>{props.episode.name}</p>
-    {props.episode.summary}
+    <p>S {props.episode.season}</p>
+    <p>E {props.episode.number}</p>
+    <img src={props.episode.image.medium} alt="episode"/>
+    <p>{props.episode.summary}</p>
 
   </div>
   </>
