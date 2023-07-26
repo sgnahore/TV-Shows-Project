@@ -1,13 +1,17 @@
+.gridContainer{
+  display: inline-grid;
+
+}
+
+
 .episodeFrame {
-border-style: inset;
-border-color: red;
-padding-bottom: 10px;
-padding-left: 10px;
-padding-top: 10px;
-padding-right: 10px;
-height: auto;
-width: auto;
-margin-bottom: 10px;
-
-
+  border-style: inset;
+  border-color: red;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  height: auto;
+  width: auto;
+  margin-bottom: 10px;
 }
