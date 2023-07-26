@@ -1,8 +1,6 @@
-.gridContainer{
+.gridContainer {
   display: inline-grid;
-
 }
-
 
 .episodeFrame {
   border-style: inset;
