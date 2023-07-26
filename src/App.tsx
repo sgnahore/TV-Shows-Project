@@ -7,10 +7,12 @@ import episodes from "./episodes.json";
 
 
 function App(): JSX.Element {
+ 
   return (
     <>
       <EpisodeCard episode={episodes[0]} />
       <EpisodeCard episode={episodes[1]} />
+
     </>
   );
 }
@@ -23,7 +25,7 @@ function EpisodeCard(props: EpisodeCardProps): JSX.Element {
   return (
   <>
   <div>
-    {props.episode.name}
+    <p>{props.episode.name}</p>
     {props.episode.summary}
 
   </div>
