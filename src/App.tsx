@@ -9,7 +9,7 @@ function App(): JSX.Element {
   const allEpisodes = episodes.map((episode: IEpisode) => (
     <EpisodeCard key={episode.id} episode={episode} />
   ));
-
+//console.log)_
   return <>{allEpisodes}</>;
 }
 
