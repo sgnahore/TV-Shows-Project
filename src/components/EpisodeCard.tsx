@@ -7,7 +7,6 @@ interface EpisodeCardProps {
   episode: IEpisode;
 }
 
-
 function EpisodeCard(props: EpisodeCardProps): JSX.Element {
   return (
     <>
