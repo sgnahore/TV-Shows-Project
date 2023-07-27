@@ -1,6 +1,5 @@
-import { IEpisode } from "./IEpisodeTypes";
+import { IEpisode } from "./components/IEpisodeTypes";
 import episodes from "./episodes.json";
-// import "./styles.css";
 import EpisodeCard from "./components/EpisodeCard";
 
 // console.log(`Imported ${episodes.length} episode(s)`);
@@ -8,14 +7,10 @@ import EpisodeCard from "./components/EpisodeCard";
 
 function App(): JSX.Element {
   const allEpisodes = episodes.map((episode: IEpisode) => (
-  <EpisodeCard key={episode.id} episode={episode} />
+    <EpisodeCard key={episode.id} episode={episode} />
   ));
-  
 
-  return <>
-{allEpisodes}
-  </>;
+  return <>{allEpisodes}</>;
 }
-
 
 export default App;
