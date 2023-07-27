@@ -12,8 +12,8 @@ function EpisodeCard(props: EpisodeCardProps): JSX.Element {
     <>
       <div className="gridContainer">
         <div className="episodeFrame">
-          <p>{props.episode.name}</p>
-          <p>
+          <p className="episodeTitle">{props.episode.name}</p>
+          <p className="seasonAndEpisode">
             {seasonCode(props.episode.season)}
             {episodeCode(props.episode.number)}
           </p>
