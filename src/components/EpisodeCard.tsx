@@ -2,6 +2,7 @@ import { IEpisode } from "./IEpisodeTypes";
 import "../styles.css";
 import seasonCode from "../utils/seasonCode";
 import episodeCode from "../utils/episodeCode";
+import removeCharacters from "../utils/removeCharacters";
 
 interface EpisodeCardProps {
   episode: IEpisode;
@@ -18,7 +19,7 @@ function EpisodeCard(props: EpisodeCardProps): JSX.Element {
             {episodeCode(props.episode.number)}
           </p>
           <img src={props.episode.image.medium} alt="episode" />
-          <p>{props.episode.summary}</p>
+          <p>{removeCharacters(props.episode.summary)}</p>
         </div>
       </div>
     </>
