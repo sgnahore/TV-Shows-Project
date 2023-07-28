@@ -1,12 +1,12 @@
 
 
 export default function removeCharacters(text:string):string {
-const open = "<p>";
-const banana = "</p>" ;
 
 
 
-    const trimmedText = text.replaceAll(/open/banana, "")
+const something = /<p>|<\/p>/g
+
+    const trimmedText = text.replace(something, "")
 
 return trimmedText
 }
