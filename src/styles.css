@@ -16,15 +16,13 @@
   text-align: center;
 }
 
-.episodeTitle{
-font-weight: bold;
+.episodeTitle {
+  font-weight: bold;
 }
 
 .seasonAndEpisode {
   text-align: center;
   border-style: solid;
   border-color: black;
-  border-width: auto ;
-
+  border-width: auto;
 }
-
